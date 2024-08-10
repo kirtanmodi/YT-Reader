@@ -40,7 +40,7 @@ def summarize_transcript(transcript):
             model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
-                {"role": "user", "content": f"Summarize the following transcript and output the main things in bullet points:\n\n{
+                {"role": "user", "content": f"Summarize the following transcript and give me the main points in bullet points:\n\n{
                     transcript}"}
             ],
             temperature=0.5
